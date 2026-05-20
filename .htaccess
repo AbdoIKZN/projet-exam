@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /MVPexam/
+
+# Rediriger l'index et le dashboard originaux vers le Front Controller MVC
+RewriteRule ^index\.php$ public/index.php [L]
+RewriteRule ^dashboard\.php$ dashboard [L]
+
+# Rediriger tous les autres appels non-physiques vers le Front Controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [QSA,L]
