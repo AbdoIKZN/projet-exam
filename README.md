@@ -43,40 +43,6 @@ http://localhost/eventhub_mvp/
 
 ---
 
-## 📁 Structure du projet
-
-```
-eventhub_mvp/
-├── index.html                  ✅ Fourni — Interface HTML/JS
-├── config/
-│   ├── db.php                  ✅ Fourni — Connexion PDO
-│   └── mailer.php              ⚠️ Partiel — Credentials SMTP à renseigner
-├── events/
-│   ├── create.php              🔴 Bugs à corriger (Partie 1.2)
-│   └── register.php            🔴 À compléter (Parties 2.1 + 2.2)
-├── api/
-│   ├── events.php              ⚠️ Partiel — searchEvents() à compléter (Partie 1.3)
-│   └── stats.php               🔴 À créer entièrement (Partie 4.2)
-├── pdf/
-│   ├── ticket.php              🔴 À créer (Partie 3.1)
-│   └── report.php              🔴 À créer (Partie 3.2)
-├── mail/
-│   ├── SendConfirmation.php    🔴 À compléter (Partie 2.1)
-│   ├── AlertMailer.php         🔴 À compléter (Partie 2.2)
-│   └── templates/
-│       ├── confirmation.html   ⚠️ Partiel — Injecter les données
-│       └── alert.html          ⚠️ Partiel — Injecter les données
-├── assets/
-│   └── js/app.js               ⚠️ Partiel — 4 fonctions fetch() à compléter
-├── database/
-│   └── schema.sql              ⚠️ Partiel — Table registrations + index à ajouter
-└── CHOIX_TECHNIQUES.md         🔴 À rédiger (Partie 5.2)
-```
-
----
-
-## 📋 Livrables à rendre
-
 | Fichier | Obligatoire |
 |---------|------------|
 | Code source complet (.zip) | ✅ |
